@@ -43,8 +43,8 @@ budget=0.737433*Math.log(Number(budget.value));
 var sum=0;
 var names=document.getElementsByName("genre");
 for(var x=0;x<names.length;x++){
-  if(names[x].checked){//选中的全部加起来
-    sum=sum+parseInt(names[x].value);//将选中的值解析出来
+  if(names[x].checked){
+    sum=sum+parseFloat(names[x].value);
   }
 }
 var total=Math.exp(sum+budget+producer+month);
